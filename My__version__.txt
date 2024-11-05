@@ -1,0 +1,35 @@
+Name: numpy
+Version: 1.20.0
+
+Name: scipy
+Version: 1.7.3 …..
+
+Name: Pillow
+Version: 9.5.0
+
+Name: Cython
+Version: 3.0.11
+
+Name: matplotlib
+Version: 3.5.3
+
+Name: scikit-image
+Version: 0.16.2
+
+Name: tensorflow
+Version: 2.0.0 ююююююю
+
+Name: Keras
+Version: 2.3.1
+
+Name: opencv-python
+Version: 4.10.0.84
+
+Name: h5py
+Version: 2.10.0
+
+Name: imgaug
+Version: 0.4.0
+
+Name: ipython
+Version: 7.34.0
