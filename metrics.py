@@ -152,14 +152,17 @@ class Metrics:
         plt.tight_layout()
         plt.show()
     
-    def generate_metrics():
-        metrics.generate_roughness_list()
-        metrics.generate_angularity_list()
-        metrics.generate_elongation_list()
+    # def generate_metrics():
+    #     metrics.generate_roughness_list()
+    #     metrics.generate_angularity_list()
+    #     metrics.generate_elongation_list()
 
 metrics = Metrics(os.path.join("weights", "cobble_mask_rcnn_trained.h5"))
 metrics.load_masks(os.path.join("metrics", "images")) #after your training completed change foto in folder metrics (but dont do this)
-metrics.generate_metrics()
+# metrics.generate_metrics()
+metrics.generate_roughness_list()
+metrics.generate_angularity_list()
+metrics.generate_elongation_list()
 metrics.plot_multiple_histograms([metrics.roughness_list, metrics.angularity_list, metrics.elongation_list],['Roughness Distribution', 'Angularity Distribution', 'Elongation Distribution'],bins=15)
 
 
