@@ -17,10 +17,10 @@ class CobbleDataset(mrcnn.utils.Dataset):
         for filename in os.listdir(images_dir):
             image_id = filename[:-4]
 
-            if is_train and int(image_id) >= 24:
+            if is_train and int(image_id) >= 6000:
                 continue
 
-            if not is_train and int(image_id) < 24:
+            if not is_train and int(image_id) < 6000:
                 continue
 
             img_path = images_dir + filename
@@ -102,3 +102,4 @@ model.train(train_dataset=train_dataset,
 
 model_path = os.path.join("weights", "cobble_mask_rcnn_trained.h5")
 model.keras_model.save_weights(model_path)
+# self.log_dir = os.path.join("logdir", "path") 2279 (in model)
